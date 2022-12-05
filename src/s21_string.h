@@ -34,13 +34,17 @@ s21_size_t s21_strspn(const char *str1, const char *str2);
 char *s21_strstr(const char *haystack, const char *needle);
 int s21_strstrHelper(const char* haystack, const char* needle);
 char *s21_strtok(char *str, const char *delim);
-void init_errors();
+// void init_errors();
 char* s21_strerror(int errnum);
 char* s21_sprintf(char* str, const char* format, ...);
-char* intToString(int d);
-char* doubleToString(double d, char* str);
+char* intToString(long int d);
+char* doubleToString(double d, int gFlag);
 char* intToHexadecimalInteger(long int d, int registerLabel);
 void reverseString(int j, char *string);
 char switchRemaind(int remaind, int registerLabel);
+char* doubleToE(double e, int registerLabel);
+int numCounter(double g);
+char* glueTwoString(char *string1, char *string2, int sum, int gFlag);
 
 #endif // S_21_STRING_H
+
